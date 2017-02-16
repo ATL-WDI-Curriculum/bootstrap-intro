@@ -109,7 +109,7 @@ Both types of containers are responsive, and both allow you to implement Bootstr
 
 ### Grid System Basics
 
-The [Bootstrap grid](http://getbootstrap.com/css/#grid) is built of `.col-[device size]-[number]` divs inside of `.row` divs, e.g.:
+The [Bootstrap grid](http://getbootstrap.com/css/#grid) is built on 12 columns, of `.col-[device size]-[number]` divs inside of `.row` divs, e.g.:
 
 ``` html
 <div class="container">
@@ -129,6 +129,10 @@ The device sizes are:
 
 The numbers indicate how many 1/12ths of the viewport width you would like that column to occupy, so `class="col-md-9 col-sm-12"` would be 9/12ths the width of a desktop screen, and 12/12ths the width of a tablet screen.
 
+<br />
+
+---
+
 ## We Never Go Out of Style...
 
 ### Out-of-the-box, Bootstrap styles some elements
@@ -143,7 +147,9 @@ For instance, `<button>` with Bootstrap doesn't change too many properties, comp
 
 The bulk of Bootstrap's customizing power lies in its dozens of components, which are implemented through a combination of CSS classes and jQuery plugins.
 
-### You do: Bootstravenger Hunt
+---
+
+### YOU DO: Bootstravenger Hunt (20m)
 
 As a class, we're going to compile an appendix to the Bootstrap documentation, providing tips and tricks on the implementation of some of Bootstrap's Greatest Hits.
 
@@ -186,11 +192,13 @@ Each group should create Codepen demo of their three components and write up the
 
 Be prepared to share! It may be helpful to split into subgroups so you can divide and conquer...
 
-## Making it Your Own
+---
+
+## Making it Your Own (15m)
 
 ### Customization
 
-Some use "Bootstrap-y" as a perjorative — a shorthand for "generic and uninspired". I wonder what those people would say to [these](https://bootstrapbay.com/blog/built-with-bootstrap/) or [these](http://builtwithbootstrap.com/).
+Some use "Bootstrap-y" as a perjorative — a shorthand for "generic and uninspired". I wonder what those people would say to [these](https://bootstrapbay.com/blog/built-with-bootstrap/) which we have seen, or [these](http://builtwithbootstrap.com/).
 
 You can assemble a custom download or modify an existing configuration at http://getbootstrap.com/customize/
 
@@ -212,13 +220,15 @@ This is one place where you sort-of see Bootstrap trying to straddle the line be
 
 **You insert a library into your code; you insert your code into a framework.**
 
+To explain the difference between a framework and a library a bit further, we are going to watch this short 3 minute video: https://www.youtube.com/watch?v=D_MO9vIRBcA
+
 It's not unlikely that some Bootstrap user will want to make their own CSS class called `.danger` that is completely unrelated to Bootstrap. It's extremely unlikely, however, that anyone is going to create their own class called `.btn-danger`.
 
 Bootstrap's "library personality" wants to be as unobtrusive as possible and not conflict with any classes users might be defining, so it engages in this sort of **classnamespacing**.
 
 #### We can use SASS to DRY up our Bootstrap!
 
-Bootstrap is written in LESS, which is like SASS but written in Javascript, but there's an [official SASS port!](http://getbootstrap.com/css/#sass)
+Bootstrap is written in LESS, which is like SASS but written in Javascript, but there is also an [official SASS port!](http://getbootstrap.com/css/#sass)
 
 The [Github README for bootstrap-sass](https://github.com/twbs/bootstrap-sass) details a number of ways to incorporate this "Sass-powered version of Bootstrap 3" into your applications.
 
@@ -226,8 +236,18 @@ Today, we're going to use [Bower](https://github.com/twbs/bootstrap-sass#c-bower
 
 - `npm install -g bower`
 
+  - bower is used for managing front end components like html, css and js
 
 - `gem install sass`
+  
+  - will install sass globally
+
+- `gem list`
+
+  - will list all of the local gems we have installed
+
+- `mkdir case-study`
+- `cd case-study`
 - `bower install bootstrap-sass`
 
 #### We Do: An InFORMED Case Study
@@ -238,24 +258,24 @@ First, touch an `index.html` that contains this form:
 <form class="grumbleForm">
   <div class="form-horizontal">
     <fieldset class="form-group">
-      <label class="control-label col-sm-3">Title:</label>
-      <div class="col-sm-9"><input class="form-control" type="text" name="title" value="{{ title }}"></div>
+      <label class="control-label col-sm-2">Title:</label>
+      <div class="col-sm-8"><input class="form-control" type="text" name="title" value="{{ title }}"></div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-3">By:</label>
-      <div class="col-sm-9"><input class="form-control" type="text" name="authorName" value="{{ authorName }}"></div>
+      <label class="control-label col-sm-2">By:</label>
+      <div class="col-sm-8"><input class="form-control" type="text" name="authorName" value="{{ authorName }}"></div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-3">Content:</label>
-      <div class="col-sm-9"><textarea class="form-control" name="content">{{ content }}</textarea></div>
+      <label class="control-label col-sm-2">Content:</label>
+      <div class="col-sm-8"><textarea class="form-control" name="content">{{ content }}</textarea></div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-3">Photo URL:</label>
-      <div class="col-sm-9"><input class="form-control" type="text" name="photoUrl" value="{{ photoUrl }}"></div>
+      <label class="control-label col-sm-2">Photo URL:</label>
+      <div class="col-sm-8"><input class="form-control" type="text" name="photoUrl" value="{{ photoUrl }}"></div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-3">&nbsp;</label>
-      <div class="col-sm-9">
+      <label class="control-label col-sm-2">&nbsp;</label>
+      <div class="col-sm-8">
         <button class="btn submit btn-primary">Submit</button>
         <button class="btn cancel">Cancel</button>
       </div>
@@ -269,6 +289,11 @@ Then, touch a stylesheet called `form-styles.scss`  that contains this:
 ``` scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
+h1 {
+    text-align: center;
+    margin: 50px 0px; 
+}
+
 input,
 textarea {
   @extend .form-control;
@@ -281,10 +306,10 @@ fieldset {
 }
 .form-horizontal{
   label{
-    @extend .col-sm-3;
+    @extend .col-sm-2;
   }
   div{
-    @extend .col-sm-9;
+    @extend .col-sm-8;
   }
 }
 ```
@@ -325,7 +350,7 @@ Finally, remove all of the classes on your `div` elements, except for `"form-hor
 </form>
 ```
 
-#### You Do: BootSassify the `btn`  situation
+#### You Do: BootSassify the `btn` situation
 
 ## Homework
 
