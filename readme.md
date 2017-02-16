@@ -13,6 +13,16 @@ Screencasts:
 - List 10 useful classes from the Bootstrap library.
 - Compare and contrast Bootstrap with other design frameworks (e.g., Foundation and Material Design).
 
+## Hook (5m)
+Raise your hand if you have ever seen a bad website.  What would you consider a 'bad site'?
+
+Let's take a look at some of these examples: http://www.topdesignmag.com/20-examples-of-bad-web-design/.  It's crazy that with all of the css frameworks available, there are still really terrible sites that aren't responsive or don't consider UX in the making of their site.
+
+Spend the next 3 minutes, reading through these two pages on why you should consider bootstrap:
+https://css-tricks.com/bootstrap/
+https://bootstrapbay.com/blog/reasons-to-use-bootstrap/
+
+
 ## Intro
 
 > "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
@@ -335,3 +345,15 @@ http://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples/
 http://builtwithbootstrap.com/
 
 https://bootstrapbay.com/blog/built-with-bootstrap/
+
+https://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-might-not-know
+
+## CSS Style Guides
+
+https://www.sitepoint.com/top-ten-css-tricks/
+
+https://css-tricks.com/css-style-guides/
+
+## Other libraries
+
+http://tutorialzine.com/2014/07/20-impressive-css3-techniques-libraries-and-examples/
