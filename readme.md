@@ -18,14 +18,17 @@ Raise your hand if you have ever seen a bad website.
 
 What would you consider a 'bad site'?
 
-Let's take a look at some of these examples: http://www.topdesignmag.com/20-examples-of-bad-web-design/.  It's crazy that with all of the css frameworks available, there are still really terrible sites that aren't responsive or don't consider UX in the making of their site.
+Let's take a look at some bad website examples: http://www.topdesignmag.com/20-examples-of-bad-web-design/.  
+
+In comparison, let's look at examples of sites that are built with bootstrap: https://bootstrapbay.com/blog/built-with-bootstrap/
+
 
 Spend the next 3 minutes, reading through these two pages on why you should consider bootstrap:
 https://css-tricks.com/bootstrap/
 https://bootstrapbay.com/blog/reasons-to-use-bootstrap/
 
 
-## Intro
+## Intro (5m)
 
 > "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
 
@@ -77,27 +80,27 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getboots
 Since Bootstrap is written with mobile in mind, they recommend configuring the viewport with this meta tag in the head of your html document:
 
 ``` html
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
 This ensures "proper rendering and touch zooming". 
 
-- **viewport**- gives the browser instructions on how to control the page's dimentions and scaling
+- **viewport**- gives the browser instructions on how to control the page's dimensions and scaling
 - **width=device-width**- sets the width of the page to follow the screen-width of the device
   - this will vary by device
-- **initial-scale=1**- sets the inital zoom level when the page is first loaded.
+- **initial-scale=1.0**- sets the inital zoom level when the page is first loaded.
 
 If you want to disable zooming on mobile devices, you can add:
 
 ``` html
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 ```
 
 ### Containers
 
 Bootstrap requires that you organize site contents using one of two `"container"` classes:
 
-- `<div class="container">` gives you a responsive, fixed-width container
+- `<div class="container">` gives you a responsive, fixed-width container, with side margins.
 - `<div class ="container-fluid">` creates a full width container that spans 100% of your viewport.
 
 [This Bootply snippet](http://www.bootply.com/render/CK6xB6cRuE) demonstrates the difference between container and container-fluid.
@@ -106,7 +109,7 @@ Both types of containers are responsive, and both allow you to implement Bootstr
 
 ### Grid System Basics
 
-We'll talk in more detail about grid systems in general, and about Bootstrap's grid in particular, this afternoon. In summary, the [Bootstrap grid](http://getbootstrap.com/css/#grid) is built of `.col-[device size]-[number]` divs inside of `.row` divs, e.g.:
+The [Bootstrap grid](http://getbootstrap.com/css/#grid) is built of `.col-[device size]-[number]` divs inside of `.row` divs, e.g.:
 
 ``` html
 <div class="container">
@@ -361,6 +364,8 @@ http://builtwithbootstrap.com/
 https://bootstrapbay.com/blog/built-with-bootstrap/
 
 https://scotch.io/bar-talk/bootstrap-3-tips-and-tricks-you-might-not-know
+
+https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system
 
 ## CSS Style Guides
 
