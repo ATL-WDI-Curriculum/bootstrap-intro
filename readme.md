@@ -29,17 +29,17 @@ https://bootstrapbay.com/blog/reasons-to-use-bootstrap/
 
 > "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
 
-Bootstrap is the visual theme on which much of the modern web is based. For instance, the styling of Github's readmes and markdown files is based very heavily on Bootstrap.
+Bootstrap is the visual theme on which much of the modern web is based. For example, the styling of Github's readmes and markdown files is based very heavily on Bootstrap.
 
-Bootstrap was born in 2011 as Twitter Blueprint. The fact that it's ubiquitious now speaks to how much of a need there was for it: prior to Bootstrap, there were lots of mini-frameworks you could use, but trying to run 35 stylesheets at the same time creates a tremendous headache.
+Bootstrap was born in 2011 as Twitter Blueprint. The fact that it's ubiquitious now speaks to how much it was needed: prior to Bootstrap, there were lots of mini-frameworks you could use, but trying to run 35 stylesheets at the same time will induce a migraine.
 
-As has been discussed, you can make the most amazing back-end functionality ever, but if the front-end doesn't look presentable you'll have a difficult time selling it.
+As previously discussed, you can make the most amazing back-end functionality ever, but if the front-end doesn't look presentable you'll have a difficult time selling it.
 
 Unless you're specifically trying to show off your CSS skills, it's often better to spend 15 minutes making your app look good with Bootstrap than it is to spend 3 days writing your own CSS. Why?
 
 The obvious reason is that one takes you 15 minutes, the other takes 3 days, and time is money. And of course, there are those clients who are non-tech-savvy and think you'll have written all the CSS yourself no matter what you do.
 
-Also, Bootstrap is written with responsive and/or mobile-first design in mind, replacing hand-rolled media queries with more intuitive and semantic class names. Clients and employers of all levels of tech-savviness will appreciate that you've prioritized these qualities.
+Also, Bootstrap is written with responsive and/or mobile-first design approach, replacing hand-rolled media queries with more intuitive and semantic class names. Clients and employers of all levels of tech-savviness will appreciate that you've prioritized these qualities.
 
 AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getbootstrap.com/) and therefore easily replicable and sharable throughout the development community.
 
@@ -48,6 +48,9 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getboots
 ### Download Options
 
 - You can grab it from a [CDN](http://getbootstrap.com/getting-started/#download-cdn).
+  - Does anyone know what CDN stands for?
+
+  A **Content Delivery Network** is a system of distributed servers that deliver content based on the user's geographic location.  It can also provide protection from traffic serges.  Because these servers exist around the world, they can help speed up the process of getting the content to your end user.  **Speed** is the most important word in that sentence.  
 
 ``` html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
