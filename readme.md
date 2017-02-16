@@ -354,7 +354,7 @@ Finally, remove all of the classes on your `div` elements, except for `"form-hor
 
 --- 
 
-## Questions to work on with your buddy
+## Questions to work on with your buddy (5m)
 
 - What's the difference between a framework and a library?
 
