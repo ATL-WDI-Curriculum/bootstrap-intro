@@ -13,6 +13,8 @@ Screencasts:
 - List 10 useful classes from the Bootstrap library.
 - Compare and contrast Bootstrap with other design frameworks (e.g., Foundation and Material Design).
 
+---
+
 ## Hook (5m)
 Raise your hand if you have ever seen a bad website.  
 
@@ -27,6 +29,7 @@ Spend the next 3 minutes, reading through these two pages on why you should cons
 https://css-tricks.com/bootstrap/
 https://bootstrapbay.com/blog/reasons-to-use-bootstrap/
 
+---
 
 ## Intro (5m)
 
@@ -45,6 +48,8 @@ The obvious reason is that one takes you 15 minutes, the other takes 3 days, and
 Also, Bootstrap is written with responsive and/or mobile-first design approach, replacing hand-rolled media queries with more intuitive and semantic class names. Clients and employers of all levels of tech-savviness will appreciate that you've prioritized these qualities.
 
 AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getbootstrap.com/) and therefore easily replicable and sharable throughout the development community.
+
+---
 
 ## Getting Started
 
