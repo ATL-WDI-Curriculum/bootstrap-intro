@@ -68,7 +68,7 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getboots
 
 `<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>`
 
-…if you want to use Bootstrap's JS components.
+…if you want to use any of Bootstrap's JS components.
 
 ### Document Setup
 
