@@ -14,7 +14,9 @@ Screencasts:
 - Compare and contrast Bootstrap with other design frameworks (e.g., Foundation and Material Design).
 
 ## Hook (5m)
-Raise your hand if you have ever seen a bad website.  What would you consider a 'bad site'?
+Raise your hand if you have ever seen a bad website.  
+
+What would you consider a 'bad site'?
 
 Let's take a look at some of these examples: http://www.topdesignmag.com/20-examples-of-bad-web-design/.  It's crazy that with all of the css frameworks available, there are still really terrible sites that aren't responsive or don't consider UX in the making of their site.
 
