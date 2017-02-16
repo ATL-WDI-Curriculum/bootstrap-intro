@@ -352,21 +352,25 @@ Finally, remove all of the classes on your `div` elements, except for `"form-hor
 
 #### You Do: BootSassify the `btn` situation
 
-## Homework
+--- 
 
-Bootstrapify (or [Foundation](http://foundation.zurb.com)-ify or [Materialize](http://materializecss.com)-ify or [Picnic](http://picniccss.com)-ify or [Pure](http://purecss.io/)-ify or…) something that you built earlier in the course. If you don't want to overwrite your previous styling, you're welcome to work on an branch. Open an issue with a link to your re-styled homework/project/lab [here](https://github.com/ga-dc/bootstrap-ify).
-
-## Questions
+## Questions to work on with your buddy
 
 - What's the difference between a framework and a library?
 
 - Name two Bootstrap classes and explain what they do.
 
-- What's the difference between a glyphicon and a jumbotron and a Megatron?
+- What's the difference between a glyphicon, a jumbotron and a Megatron?
 
 - Give an example of a situation in which you might want to use Bootstrap, versus one in which you might not.
 
-  ​
+--- 
+
+## Homework
+
+Bootstrapify (or [Foundation](http://foundation.zurb.com)-ify or [Materialize](http://materializecss.com)-ify or [Picnic](http://picniccss.com)-ify or [Pure](http://purecss.io/)-ify or…) something that you built earlier in the course. If you don't want to overwrite your previous styling, you're welcome to work on an branch. Open an issue with a link to your re-styled homework/project/lab [here](https://github.com/ga-dc/bootstrap-ify).
+
+---  ​
 
 ## Helpful References
 
