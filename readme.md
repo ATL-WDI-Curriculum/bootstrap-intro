@@ -66,19 +66,28 @@ AND, unlike your hand-rolled CSS, Bootstrap is [well documented](http://getboots
 
 ### You Are Also Going to Need jQuery...
 
-`<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>`
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>`
 
 …if you want to use any of Bootstrap's JS components.
 
+- Does anything stand out from that url?
+
 ### Document Setup
 
-Since Bootstrap is written with mobile in mind, they recommend configuring the viewport with a meta tag in the head:
+Since Bootstrap is written with mobile in mind, they recommend configuring the viewport with this meta tag in the head of your html document:
 
 ``` html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-This ensures "proper rendering and touch zooming". If you want to disable zooming on mobile devices, you can add:
+This ensures "proper rendering and touch zooming". 
+
+- **viewport**- gives the browser instructions on how to control the page's dimentions and scaling
+- **width=device-width**- sets the width of the page to follow the screen-width of the device
+  - this will vary by device
+- **initial-scale=1**- sets the inital zoom level when the page is first loaded.
+
+If you want to disable zooming on mobile devices, you can add:
 
 ``` html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
