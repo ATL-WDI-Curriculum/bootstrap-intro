@@ -244,7 +244,7 @@ The key difference between a library and a framework is **“Inversion of Contro
 
 #### We can use SASS to DRY up our Bootstrap!
 
-Bootstrap is written in LESS, which is like SASS, but it is written in Javascript ( there is also an [official SASS port!](http://getbootstrap.com/css/#sass)). [SASS](http://sass-lang.com/) stands for Syntactically Awesome Style Sheets. SASS is an extension of CSS.  SASS allows you to use variables for colors, nested rules, and even different variants of colors.  However, in order to use SASS, you need to have Ruby installed.  If you have a mac, Ruby comes pre-installed.  On a Linux or Windows computer, you will also need to install Ruby before using SASS.
+Bootstrap is written in LESS, which is like SASS, but it is written in Javascript ( there is also an [official SASS port!](http://getbootstrap.com/css/#sass)). [SASS](http://sass-lang.com/) stands for Syntactically Awesome Style Sheets. SASS is an extension of CSS.  SASS allows you to use variables for colors, nested rules, and even math and functions.  However, in order to use SASS, you need to have Ruby installed.  If you have a mac, Ruby comes pre-installed.  On a Linux or Windows computer, you will also need to install Ruby before using SASS.
 
 The [Github README for bootstrap-sass](https://github.com/twbs/bootstrap-sass) details a number of ways to incorporate this "Sass-powered version of Bootstrap 3" into your applications.
 
@@ -255,23 +255,24 @@ Today, we're going to use [Bower](https://github.com/twbs/bootstrap-sass#c-bower
   - bower is used for managing front end components like html, css and js
   - `-g` means install this gem globally
 
-<!-- - `gem install sass`
+- `gem install sass`
   
   - will install sass globally
 
-- `gem list` -->
+- `gem list`
 
   - will list all of the local gems we have installed
 
 - `mkdir case-study`
 - `cd case-study`
-<!-- - `bower install bootstrap-sass` -->
+- `bower install bootstrap-sass`
 
 #### We Do: An InFORMED Case Study
 
 First, touch an `index.html` that contains this form:
 
 ``` html
+<h1>Harry Potter's First Year Form</h1>
 <form class="grumbleForm">
   <div class="form-horizontal">
     <fieldset class="form-group">
@@ -338,6 +339,7 @@ Next, **and this is a big one**, in your terminal, run`sass form-styles.scss for
 Finally, remove all of the classes on your `div` elements, except for `"form-horizontal"` on the first one.
 
 ``` html
+<h1>Harry Potter's First Year Form</h1>
 <form class="grumbleForm">
   <div class="form-horizontal">
     <fieldset>
@@ -422,3 +424,13 @@ https://css-tricks.com/css-style-guides/
 ## Other libraries
 
 http://tutorialzine.com/2014/07/20-impressive-css3-techniques-libraries-and-examples/
+
+## SASS
+
+http://sass-lang.com/
+
+https://scotch.io/tutorials/getting-started-with-sass
+
+http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
+
+http://thesassway.com/guides
