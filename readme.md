@@ -246,10 +246,13 @@ The key difference between a library and a framework is **“Inversion of Contro
 
 #### We Do: An InFORMED Case Study
 
-- `mkdir case-study`
-- `cd case-study`
+- cd into your ga folder
+- cd into your exercises folder
+- `mkdir bootstrap-case-study`
+- `cd bootstrap-case-study`
 - touch an `index.html` that contains this form:
 (Make sure to add all of the 4 pairs of tags that are necessary for every HTML page, including the !DOCTYPE)
+- `subl .`
 
 ``` html
 <h1>Harry Potter's First Year Form</h1>
