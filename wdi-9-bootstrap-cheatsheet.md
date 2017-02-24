@@ -15,6 +15,8 @@ https://files.slack.com/files-pri/T0351JZQ0-F4AT6VB5M/download/bootstrap__affix_
 
 <br />
 
+---
+
 **Group Two**
 #### Jumbotron
 - main component on a page
@@ -38,12 +40,15 @@ http://glyphicons.com/
 
 <br />
 
+---
+
 **Group Three**
 
 #### Badge
 - little numbers that you can put near things like items in an inbox
     - you can add colors
 http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
+https://www.w3schools.com/bootstrap/bootstrap_badges_labels.asp
 
 #### Progress bar
 - how long something is loading or much is completed/ show the progress of something
@@ -52,7 +57,7 @@ http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
     - add to any element
     - class of primary- blue
 http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
-
+https://www.w3schools.com/bootstrap/bootstrap_progressbars.asp
 
 #### List groups
 - basic unordered list, with a border
@@ -60,8 +65,11 @@ http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
     - you can make list items out of divs instead of ul/li
     - active features
 http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
+https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp
 
 <br />
+
+---
 
 **Group Four**
 
@@ -70,10 +78,12 @@ http://codepen.io/raymeibaum/pen/NpPxzw?editors=1000
     - will expand and collapse according to the screen size 
     - make sure to add the css for bootstrap in order to make it work
 http://codepen.io/magkinney21/pen/KWwzWE
+http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=static-navbar
 
 #### Dropdowns
 - simple dropdown that shows a list
 http://codepen.io/magkinney21/pen/MpYKLz
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-dropdowns.php
 
 #### Panels
 - box with a border around it- basic version
@@ -81,8 +91,11 @@ http://codepen.io/magkinney21/pen/MpYKLz
     - you can group you panels together and organize it
 http://codepen.io/magkinney21/pen/YZPqjE
 http://codepen.io/magkinney21/pen/oZgxLz
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-panels.php
 
 <br />
+
+---
 
 **Group Five**
 
@@ -106,3 +119,14 @@ http://codepen.io/FHappy/pen/QpwNPe/?editors=1000
 https://codepen.io/monkeyraptor/pen/fAmti
 https://www.w3schools.com/bootstrap/bootstrap_tooltip.asp
 
+#### Bootstrap Tutorials
+
+http://campus.codeschool.com/courses/blasting-off-with-bootstrap/level/1/adding-bootstrap
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-dropdowns.php
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-panels.php
+
+http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=static-navbar
+
+https://www.tutorialspoint.com/bootstrap/bootstrap_wells.htm
