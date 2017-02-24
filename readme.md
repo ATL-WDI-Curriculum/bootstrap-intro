@@ -276,7 +276,7 @@ First, touch an `index.html` that contains this form:
   <div class="form-horizontal">
     <fieldset class="form-group">
       <label class="control-label col-sm-2">Title:</label>
-      <div class="col-sm-8"><input class="form-control" type="text" name="title" value="{{ title }}"></div>
+      <div class="col-sm-8"><input class="form-control" type="text" name="title" value="Harry Potter and the Sorcerer's Stone"></div>
     </fieldset>
     <fieldset class="form-group">
       <label class="control-label col-sm-2">By:</label>
@@ -342,7 +342,7 @@ Finally, remove all of the classes on your `div` elements, except for `"form-hor
   <div class="form-horizontal">
     <fieldset>
       <label>Title:</label>
-      <div><input type="text" name="title" value="Harry Potter and the Sourcerer's Stone"></div>
+      <div><input type="text" name="title" value="Harry Potter and the Sorcerer's Stone"></div>
     </fieldset>
     <fieldset>
       <label>By:</label>
