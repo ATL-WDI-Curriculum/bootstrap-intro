@@ -27,6 +27,7 @@ In comparison, let's look at examples of sites that are built with bootstrap: ht
 
 Spend the next 3 minutes, reading through these two pages on why you should consider bootstrap:
 https://css-tricks.com/bootstrap/
+<br />
 https://bootstrapbay.com/blog/reasons-to-use-bootstrap/
 
 ---
