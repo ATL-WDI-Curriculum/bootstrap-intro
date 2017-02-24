@@ -249,27 +249,28 @@ The key difference between a library and a framework is **“Inversion of Contro
 - `mkdir case-study`
 - `cd case-study`
 - touch an `index.html` that contains this form:
+(Make sure to add all of the 4 pairs of tags that are necessary for every HTML page, including the !DOCTYPE)
 
 ``` html
 <h1>Harry Potter's First Year Form</h1>
 <form class="grumbleForm">
   <div class="form-horizontal">
     <fieldset class="form-group">
-      <label class="control-label col-sm-2">Title:</label>
+      <label for="title" class="control-label col-sm-2">Title:</label>
       <div class="col-sm-8">
-        <input class="form-control" type="text" name="title" value="Harry Potter and the Sorcerer's Stone">
+        <input class="form-control" type="text" name="title" id="title" value="Harry Potter and the Sorcerer's Stone">
       </div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-2">By:</label>
+      <label for="authorName" class="control-label col-sm-2">By:</label>
       <div class="col-sm-8">
-        <input class="form-control" type="text" name="authorName" value="J.K. Rowling">
+        <input class="form-control" type="text" name="authorName" id="authorName" value="J.K. Rowling">
       </div>
     </fieldset>
     <fieldset class="form-group">
-      <label class="control-label col-sm-2">Content:</label>
+      <label for="content" class="control-label col-sm-2">Content:</label>
       <div class="col-sm-8">
-        <textarea class="form-control" name="content">
+        <textarea class="form-control" name="content" id="content">
           Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.
         </textarea>
       </div>
@@ -299,6 +300,8 @@ h1 {
     margin: 50px 0px; 
 }
 ```
+
+Make sure to link the stylesheet to your html- `<link rel="stylesheet" href="form-styles.css" />`
 
 --- 
 
