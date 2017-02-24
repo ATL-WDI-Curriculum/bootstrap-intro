@@ -211,7 +211,7 @@ You can assemble a custom download or modify an existing configuration at http:/
 
 ### Bootstrap
 
-As many of you might have noticed when preparing your demos, implementing customized Bootstrap elements can easily get repetitive, lengthy and difficult to read. Straight Bootstrap also verges on violating separation of concerns, with all of those visually-oriented classnames muddying up your HTML.
+As many of you might have noticed when preparing your demos, implementing customized Bootstrap elements can easily get repetitive, lengthy and difficult to read.
 
 For instance, if I wanted to make a small "delete" button, I'd write something like this:
 
