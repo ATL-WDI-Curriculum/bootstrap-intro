@@ -208,7 +208,7 @@ Some use "Bootstrap-y" as a perjorative — a shorthand for "generic and uninspi
 
 You can assemble a custom download or modify an existing configuration at http://getbootstrap.com/customize/
 
-### Bootstrap-SASS
+### Bootstrap
 
 As many of you might have noticed when preparing your demos, implementing customized Bootstrap elements can easily get repetitive, lengthy and difficult to read. Straight Bootstrap also verges on violating separation of concerns, with all of those visually-oriented classnames muddying up your HTML.
 
@@ -242,34 +242,13 @@ Bootstrap works to be as unobtrusive as possible and not conflict with any class
 
 The key difference between a library and a framework is **“Inversion of Control”**. When you call a method from a library, you are in control. But with a framework, the control is inverted: the framework calls you.
 
-#### We can use SASS to DRY up our Bootstrap!
-
-Bootstrap is written in LESS, which is like SASS, but it is written in Javascript ( there is also an [official SASS port!](http://getbootstrap.com/css/#sass)). [SASS](http://sass-lang.com/) stands for Syntactically Awesome Style Sheets. SASS is an extension of CSS.  SASS allows you to use variables for colors, nested rules, and even math and functions.  However, in order to use SASS, you need to have Ruby installed.  If you have a mac, Ruby comes pre-installed.  On a Linux or Windows computer, you will also need to install Ruby before using SASS.
-
-The [Github README for bootstrap-sass](https://github.com/twbs/bootstrap-sass) details a number of ways to incorporate this "Sass-powered version of Bootstrap 3" into your applications.
-
-Today, we're going to use [Bower](https://github.com/twbs/bootstrap-sass#c-bower):
-
-- `npm install -g bower`
-
-  - bower is used for managing front end components like html, css and js
-  - `-g` means install this gem globally
-
-- `gem install sass`
-  
-  - will install sass globally
-
-- `gem list`
-
-  - will list all of the local gems we have installed
-
-- `mkdir case-study`
-- `cd case-study`
-- `bower install bootstrap-sass`
+<br />
 
 #### We Do: An InFORMED Case Study
 
-First, touch an `index.html` that contains this form:
+- `mkdir case-study`
+- `cd case-study`
+- touch an `index.html` that contains this form:
 
 ``` html
 <h1>Harry Potter's First Year Form</h1>
@@ -277,19 +256,29 @@ First, touch an `index.html` that contains this form:
   <div class="form-horizontal">
     <fieldset class="form-group">
       <label class="control-label col-sm-2">Title:</label>
-      <div class="col-sm-8"><input class="form-control" type="text" name="title" value="Harry Potter and the Sorcerer's Stone"></div>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" name="title" value="Harry Potter and the Sorcerer's Stone">
+      </div>
     </fieldset>
     <fieldset class="form-group">
       <label class="control-label col-sm-2">By:</label>
-      <div class="col-sm-8"><input class="form-control" type="text" name="authorName" value="J.K. Rowling"></div>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" name="authorName" value="J.K. Rowling">
+      </div>
     </fieldset>
     <fieldset class="form-group">
       <label class="control-label col-sm-2">Content:</label>
-      <div class="col-sm-8"><textarea class="form-control" name="content">Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.</textarea></div>
+      <div class="col-sm-8">
+        <textarea class="form-control" name="content">
+          Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.
+        </textarea>
+      </div>
     </fieldset>
     <fieldset class="form-group">
       <label class="control-label col-sm-2">Photo URL:</label>
-      <div class="col-sm-8"><input class="form-control" type="text" name="photoUrl" value="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwj_vL3OianSAhVMKyYKHdZNAPcQjBwIBA&url=http%3A%2F%2Fd.ibtimes.co.uk%2Fen%2Ffull%2F237990%2Fjk-rowling.jpg&psig=AFQjCNEtVFa3Jdr687s4vwNxhxjJVsuywA&ust=1488037417080235"></div>
+      <div class="col-sm-8">
+        <input class="form-control" type="text" name="photoUrl" value="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwj_vL3OianSAhVMKyYKHdZNAPcQjBwIBA&url=http%3A%2F%2Fd.ibtimes.co.uk%2Fen%2Ffull%2F237990%2Fjk-rowling.jpg&psig=AFQjCNEtVFa3Jdr687s4vwNxhxjJVsuywA&ust=1488037417080235">
+      </div>
     </fieldset>
     <fieldset class="form-group">
       <label class="control-label col-sm-2">&nbsp;</label>
@@ -302,74 +291,14 @@ First, touch an `index.html` that contains this form:
 </form>
 ```
 
-Then, touch a stylesheet called `form-styles.scss`  that contains this:
+Then, touch a stylesheet called `form-styles.css` that contains this:
 
-``` scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-
+``` css
 h1 {
     text-align: center;
     margin: 50px 0px; 
 }
-
-input,
-textarea {
-  @extend .form-control;
-}
-label {
-  @extend .control-label;
-}
-fieldset {
-  @extend .form-group;
-}
-.form-horizontal{
-  label{
-    @extend .col-sm-2;
-  }
-  div{
-    @extend .col-sm-8;
-  }
-}
 ```
-
-Also, touch `form-styles.css` and leave it blank.
-
-Next, **and this is a big one**, in your terminal, run`sass form-styles.scss form-styles.css`. This command converts your sass to css, and add the converted cofe to your form-styles.css file.  Now I only need to `<link rel="stylesheet" href="form-styles.css" />` to load **all** of Bootstrap **plus** the changes you just made! Let's take a look at your CSS file...
-
-Finally, remove all of the classes on your `div` elements, except for `"form-horizontal"` on the first one.
-
-``` html
-<h1>Harry Potter's First Year Form</h1>
-<form class="grumbleForm">
-  <div class="form-horizontal">
-    <fieldset>
-      <label>Title:</label>
-      <div><input type="text" name="title" value="Harry Potter and the Sorcerer's Stone"></div>
-    </fieldset>
-    <fieldset>
-      <label>By:</label>
-      <div><input type="text" name="authorName" value="J.K. Rowling"></div>
-    </fieldset>
-    <fieldset>
-      <label>Content:</label>
-      <div><textarea name="content">Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.</textarea></div>
-    </fieldset>
-    <fieldset>
-      <label>Photo URL:</label>
-      <div><input type="text" name="photoUrl" value="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwj_vL3OianSAhVMKyYKHdZNAPcQjBwIBA&url=http%3A%2F%2Fd.ibtimes.co.uk%2Fen%2Ffull%2F237990%2Fjk-rowling.jpg&psig=AFQjCNEtVFa3Jdr687s4vwNxhxjJVsuywA&ust=1488037417080235"></div>
-    </fieldset>
-    <fieldset>
-      <label>&nbsp;</label>
-      <div>
-        <button class="btn submit btn-primary">Submit</button>
-        <button class="btn cancel">Cancel</button>
-      </div>
-    </fieldset>
-  </div>
-</form>
-```
-
-#### You Do: BootSassify the `btn` situation
 
 --- 
 
@@ -424,13 +353,3 @@ https://css-tricks.com/css-style-guides/
 ## Other libraries
 
 http://tutorialzine.com/2014/07/20-impressive-css3-techniques-libraries-and-examples/
-
-## SASS
-
-http://sass-lang.com/
-
-https://scotch.io/tutorials/getting-started-with-sass
-
-http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/
-
-http://thesassway.com/guides
